@@ -1,0 +1,13 @@
+<h1>{{titulo}}</h1>
+<a href="/productos/create">Agregar Producto</a>
+<ul>
+  {{#each productos}}
+  <li>
+    {{nombre}} - {{categoria}} - <a href="/productos/show/{{_id}}">Ver</a> | 
+    <a href="/productos/edit/{{_id}}">Editar</a> | 
+    <form style="display:inline" action="/productos/delete/{{_id}}" method="POST">
+      <button type="submit">Eliminar</button>
+    </form>
+  </li>
+  {{/each}}
+</ul>

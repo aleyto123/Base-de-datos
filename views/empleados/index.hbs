@@ -1,0 +1,13 @@
+<h1>{{titulo}}</h1>
+<a href="/empleados/create">Agregar Empleado</a>
+<ul>
+  {{#each empleados}}
+  <li>
+    {{nombre}} {{apellido}} - <a href="/empleados/show/{{_id}}">Ver</a> | 
+    <a href="/empleados/edit/{{_id}}">Editar</a> | 
+    <form style="display:inline" action="/empleados/delete/{{_id}}" method="POST">
+      <button type="submit">Eliminar</button>
+    </form>
+  </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+<h1>Crear Producto</h1>
+<form action="/productos/save" method="POST">
+  <input type="text" name="nombre" placeholder="Nombre" required><br>
+  <input type="text" name="descripcion" placeholder="Descripción"><br>
+  <input type="number" name="precio" placeholder="Precio" required step="0.01"><br>
+  <input type="number" name="stock" placeholder="Stock" required><br>
+  <input type="text" name="categoria" placeholder="Categoría"><br>
+  <button type="submit">Guardar</button>
+</form>
+<a href="/productos">Cancelar</a>

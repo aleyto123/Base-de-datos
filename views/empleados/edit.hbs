@@ -1,0 +1,12 @@
+<h1>Editar Empleado</h1>
+<form action="/empleados/update/{{_id}}" method="POST">
+  <input type="text" name="nombre" value="{{nombre}}" required><br>
+  <input type="text" name="apellido" value="{{apellido}}" required><br>
+  <input type="email" name="email" value="{{email}}" required><br>
+  <input type="text" name="telefono" value="{{telefono}}"><br>
+  <input type="text" name="puesto" value="{{puesto}}"><br>
+  <input type="date" name="fechaIngreso" value="{{fechaIngreso}}"><br>
+  <input type="number" name="salario" value="{{salario}}"><br>
+  <button type="submit">Actualizar</button>
+</form>
+<a href="/empleados">Cancelar</a>
